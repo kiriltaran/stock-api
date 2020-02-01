@@ -1,0 +1,38 @@
+{
+  "name": "stock-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "watch": "nodemon --exec ts-node src/index.ts --watch src",
+    "watch:node": "nodemon --exec ts-node src/index.ts --watch src",
+    "watch:ts": "tsc --watch",
+    "build:ts": "tsc",
+    "test": "jest"
+  },
+  "author": "kiriltaran@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "date-fns": "^2.9.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/http-errors": "^1.6.3",
+    "@types/jest": "^25.1.1",
+    "@types/lodash": "^4.14.149",
+    "@types/nock": "^11.1.0",
+    "@types/supertest": "^2.0.8",
+    "jest": "^25.1.0",
+    "nock": "^11.7.2",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.1.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
