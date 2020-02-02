@@ -13,7 +13,7 @@ app.get("/favicon.ico", (req, res) => {
 });
 
 app.use((req, res, next) => {
-  next(createError(404, "Not found"));
+  next(createError(404));
 });
 
 app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {

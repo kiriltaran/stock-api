@@ -14,11 +14,6 @@ alphavantageApiClient.interceptors.request.use(request => ({
   }
 }));
 
-alphavantageApiClient.interceptors.response.use(
-  ({ data }) => data,
-  error => {
-    throw error;
-  }
-);
+alphavantageApiClient.interceptors.response.use(({ data }) => data);
 
 export { alphavantageApiClient };

@@ -10,7 +10,7 @@ const pricesHandler = async (
 ) => {
   try {
     if (!req.query.company) {
-      next(createError(404, "Not Found"));
+      next(createError(400));
     }
 
     const [priceInfo, companyInfo] = await Promise.all([
@@ -23,7 +23,7 @@ const pricesHandler = async (
       price: get(priceInfo, ["Global Quote", "05. price"])
     });
   } catch (error) {
-    next(createError(error.response.status, error.response.statusText));
+    next(createError());
   }
 };
 
