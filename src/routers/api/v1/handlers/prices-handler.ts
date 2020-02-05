@@ -20,7 +20,7 @@ const pricesHandler = async (
 
     res.status(200).json({
       name: get(first(get(companyInfo, ["bestMatches"])), "2. name"),
-      price: get(priceInfo, ["Global Quote", "05. price"])
+      price: Number(get(priceInfo, ["Global Quote", "05. price"]))
     });
   } catch (error) {
     next(createError());
