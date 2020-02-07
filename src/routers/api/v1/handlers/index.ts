@@ -1,3 +1,4 @@
 import { pricesHandler } from "./prices-handler";
+import { seriesHandler } from "./series-handler";
 
-export { pricesHandler };
+export { pricesHandler, seriesHandler };
