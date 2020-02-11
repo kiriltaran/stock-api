@@ -23,6 +23,7 @@ const pricesHandler = async (
         symbol,
         name: get(first(get(companyInfo, ["bestMatches"])), "2. name"),
         price: Number(get(priceInfo, ["Global Quote", "05. price"])),
+        change: Number(get(priceInfo, ["Global Quote", "09. change"])),
         change_percent: get(priceInfo, ["Global Quote", "10. change percent"])
       };
     };
