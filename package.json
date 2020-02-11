@@ -14,7 +14,9 @@
   "author": "kiriltaran@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "@types/cors": "^2.8.6",
     "axios": "^0.19.2",
+    "cors": "^2.8.5",
     "date-fns": "^2.9.0",
     "express": "^4.17.1",
     "http-errors": "^1.7.3",

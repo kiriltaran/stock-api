@@ -1,9 +1,11 @@
 import express, { Request, Response, NextFunction } from "express";
 import createError, { HttpError } from "http-errors";
+import cors from "cors";
 import { apiRouter } from "./routers";
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.use("/api", apiRouter);
